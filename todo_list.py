@@ -209,31 +209,52 @@ def delete_task():
             print(f"Task Title: {task['title']}")
             print(f"Task Description: {task['description']}")
             print(f"Task Due Date: {task['due_date']}")
-            print(f"Task Completed? {task['completed']}\n")
+            print(f"Task Complete Status: {task['completed']}\n")
             while True:
-                print("Do you wish to continue to delete this task?")
-                confirm = input("Type 'Yes' or 'No'\n").upper()
-                if confirm == "YES":
-                    beep_success()
-                    tasks.remove(task)
-                    save_data(data)
-                    clear_screen()
-                    print(f"The task '{task['title']}' has been deleted!\n")
-                    print("Taking you back to the main menu\n")
-                    main_menu()
-                elif confirm == "NO":
-                    beep_error()
-                    clear_screen()
-                    print(f"The task '{task['title']}' has NOT been deleted\n")
-                    print("Taking you back to main menu...\n")
-                    main_menu()
+                if task["completed"] == True:
+                    print("Do you wish to continue to delete this task?")
+                    confirm = input("Type 'Yes' or 'No'\n").upper()
+                    if confirm == "YES":
+                        beep_success()
+                        tasks.remove(task)
+                        save_data(data)
+                        clear_screen()
+                        print(f"The task '{task['title']}' has been deleted!\n")
+                        print("Taking you back to the main menu\n")
+                        main_menu()
+                    elif confirm == "NO":
+                        beep_error()
+                        clear_screen()
+                        print(f"The task '{task['title']}' has NOT been deleted\n")
+                        print("Taking you back to main menu...\n")
+                        main_menu()
+                    else:
+                        beep_error()
+                        clear_screen()
+                        print("You are deleting the following task:\n")
+                        print(f"Task ID: {task['id']}")
+                        print(f"Task Title: {task['title']}\n")
+                        print("Please type either 'Yes' or 'No':\n")
                 else:
-                    beep_error()
-                    clear_screen()
-                    print("You are deleting the following task:\n")
-                    print(f"Task ID: {task['id']}")
-                    print(f"Task Title: {task['title']}\n")
-                    print("Please type either 'Yes' or 'No':\n")
+                    print("This task is still incomplete")
+                    confirm = input("Are you sure you would like to delete?\n").upper()
+                    if confirm == "YES":
+                        beep_success()
+                        tasks.remove(task)
+                        save_data(data)
+                        clear_screen()
+                        print(f"The task '{task['title']}' has been deleted!\n")
+                        print("Taking you back to the main menu\n")
+                        main_menu()
+                    elif confirm == "NO":
+                        beep_error()
+                        clear_screen()
+                        print(f"The task '{task['title']}' has NOT been deleted\n")
+                        print("Taking you back to main menu...\n")
+                        main_menu()
+                    else:
+                        beep_error()
+                        print("Please enter either 'Yes' or 'No'")
 
 def task_complete():
     clear_screen()
@@ -263,7 +284,6 @@ def task_complete():
         clear_screen()
         print(f"Task '{task['title']}' has been updated to complete! :)")
         main_menu()
-
 def modify_task():
     clear_screen()
     print("*MODIFYING A TASK*")
