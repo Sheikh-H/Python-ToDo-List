@@ -148,7 +148,7 @@ The script runs on:
 <pre>
 MIT Licence
 
-Copyright (c) 2025 Sheikh Hussain
+Copyright (c) 2025 Sheikh-H
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -177,7 +177,7 @@ SOFTWARE.
 <p>
 👤 <b>Sheikh</b><br>
 💬 Learning to Code | Passionate about building clean, functional tools in Python<br>
-📧 Email: <i>[your.email@example.com]</i>
+📧 Contact: <i>https://www.linkedin.com/in/sheikh-hussain/</i>
 </p>
 
 ---
