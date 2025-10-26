@@ -133,7 +133,7 @@ The script runs on:
 <h2>🧰 Requirements</h2>
 
 <ul>
-  <li>Python 3.x</li>
+  <li>Python 3.13 or above</li>
   <li>No external libraries required — fully built using Python’s standard library</li>
 </ul>
 
