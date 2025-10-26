@@ -36,9 +36,10 @@ It automatically adjusts task priorities as deadlines approach and stores all da
 <pre>
 TaskManager/
 │
-├── tasks.json          # Stores all task data
 ├── task_manager.py     # Main script (this file)
-└── README.md           # Project documentation
+├── README.md           # Project documentation
+└── LICENCE             # MIT Licence
+
 </pre>
 
 ---
