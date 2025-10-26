@@ -47,7 +47,7 @@ TaskManager/
 <h2>🚀 How to Run</h2>
 
 <ol>
-  <li><b>Make sure you have Python 3 installed.</b></li>
+  <li>Make sure you have <b>Python 3.13 or above</b> installed.</li>
   <li>Download or clone this repository:
     <pre>git clone https://github.com/Sheikh-H/TaskManager.git</pre>
   </li>
