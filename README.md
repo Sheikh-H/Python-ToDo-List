@@ -49,7 +49,7 @@ TaskManager/
 <ol>
   <li><b>Make sure you have Python 3 installed.</b></li>
   <li>Download or clone this repository:
-    <pre>git clone https://github.com/YourUsername/TaskManager.git</pre>
+    <pre>git clone https://github.com/Sheikh-H/TaskManager.git</pre>
   </li>
   <li>Navigate into the project folder:
     <pre>cd TaskManager</pre>
